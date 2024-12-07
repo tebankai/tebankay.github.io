@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Esteban Rojas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Mi Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio" class="menu-item" data-target="inicio">Inicio</a></li>
+                    <li><a href="#acerca-de-mi" class="menu-item" data-target="acerca-de-mi">Acerca de mí</a></li>
+                    <li><a href="#proyectos" class="menu-item" data-target="proyectos">Proyectos</a></li>
+                    <li><a href="#contacto" class="menu-item" data-target="contacto">Contacto</a></li>
+                    <li><a href="#redes-sociales" class="menu-item" data-target="redes-sociales">Redes Sociales</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main id="main-content">
+            <section id="inicio" class="content">
+                <div class="box">
+                    <div class="image-container">
+                        <img src="pato.webp" alt="Pato Estresado" class="intro-image">
+                    </div>
+                    <div class="text-container">
+                        <h2>Future Duck Coding</h2>
+                        <p>Future Duck Coding es un emprendimiento personal de Esteban, donde se dedica a ofrecer servicios de desarrollo de software, soluciones tecnológicas y programación. Su enfoque es ayudar a clientes a transformar sus ideas en aplicaciones funcionales, sistemas web y proyectos de software a medida. El nombre "Future Duck Coding" transmite un estilo creativo, innovador y un poco divertido, reflejando la personalidad como programador que está preparado para abordar los desafíos del futuro con soluciones tecnológicas modernas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="acerca-de-mi" class="content">
+                <div class="box">
+                    <div class="text-container">
+                        <h2>Acerca de mí</h2>
+                        <p>Desarrollador de Software y Web con experiencia en la creación y optimización de aplicaciones robustas y escalables. Hábil en el uso de tecnologías modernas en frontend y backend para construir soluciones de alto rendimiento que mejoran la experiencia del usuario. Orientado a los detalles y enfocado en la resolución de problemas, con una capacidad comprobada para trabajar en equipo y entregar proyectos a tiempo.</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="fortalezas.png" alt="Imagen acerca de mí">
+                    </div>
+                </div>
+            </section>
+
+            <section id="proyectos" class="content">
+                <h2>Proyectos</h2>
+                <p>Este proyecto consistió en desarrollar una página web para fomentar el turismo y aumentar los ingresos del Instituto Costarricense de Turismo (ICT) al promover destinos avalados por la institución. La página incluía un sistema de búsqueda y reservas que permitía a los usuarios explorar opciones de hospedaje con descripciones detalladas, fotos, precios y disponibilidad. También ofrecía información completa sobre los lugares, servicios y actividades cercanas. El diseño se enfocó en ser moderno, intuitivo y funcional en dispositivos móviles y computadoras, garantizando una experiencia fluida para los usuarios. Este proyecto no solo buscó atraer más turistas, sino también apoyar el crecimiento económico de las comunidades locales al destacar sus servicios y atractivos turísticos.</p>
+                <!-- Galería Lightbox -->
+                <div class="gallery">
+                    <a href="home.png" class="lightbox" data-lightbox="projects-gallery">
+                        <img src="home.png" alt="Proyecto 1">
+                    </a>
+                    <a href="revisarreservas.png" class="lightbox" data-lightbox="projects-gallery">
+                        <img src="revisarreservas.png" alt="Proyecto 2">
+                    </a>
+                    <a href="servicios.png" class="lightbox" data-lightbox="projects-gallery">
+                        <img src="servicios.png" alt="Proyecto 3">
+                    </a>
+                </div>
+            </section>
+            
+
+            <section id="contacto" class="content">
+                <div class="contact-box">
+                    <h2>Contacto</h2>
+                    <form action="mailto:tebankai07@gmail.com" method="POST" enctype="text/plain">
+                        <input type="text" name="name" placeholder="Tu nombre" required>
+                        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                        <textarea name="message" placeholder="Tu mensaje" rows="4" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    </div>
+                    </section>
+                    
+                    <!-- Sección de Redes Sociales -->
+                    <div id="redes-sociales" class="content hidden">
+                        <div class="social-container">
+                            <a href="https://www.linkedin.com/in/erojash" target="_blank" class="social-item">
+                                <img src="link.png" alt="LinkedIn">
+                            </a>
+                            <a href="https://github.com/tebankai" target="_blank" class="social-item">
+                                <img src="facebook.png" alt="GitHub">
+                            </a>
+                            <a href="https://github.com/tebankai" target="_blank" class="social-item">
+                                <img src="git.png" alt="Twitter">
+                            </a>
+                            <a href="https://www.instagram.com/tebankai" target="_blank" class="social-item">
+                                <img src="Instagram.png" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    </main>
+    </div>
+    <button id="scrolltop" class="hidden">↑</button>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+</body>
+</html>

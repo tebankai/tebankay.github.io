@@ -1,0 +1,323 @@
+/* Estilo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #9400FF;
+    height: 100vh;
+    color: white; /* Asegura que todo el texto en el body sea blanco */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.sidebar {
+    background-color: #27005D;
+    width: 200px;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: white; /* Color blanco para los enlaces */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+#main-content {
+    margin-left: 200px;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    height: 100%;
+}
+
+/* Asegura que las secciones estén ocultas por defecto */
+.content {
+    display: none;
+    opacity: 0;
+}
+
+.content:not(.hidden) {
+    display: block;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilo del carrusel */
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+/* Estilo del botón scrolltop */
+#scrolltop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background: #007bff;
+    color: white; /* Botón con texto blanco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#scrolltop:hover {
+    background-color: #0056b3;
+}
+
+#scrolltop.hidden {
+    display: none;
+}
+
+/* Sección de inicio */
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    background-color: #27005D;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    height: 80%;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-image {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contenedor de texto */
+.text-container {
+    flex: 1;
+    padding: 20px;
+    color: white; /* Establece el color blanco para el texto */
+    text-align: left;
+}
+
+.text-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.text-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Asegura que la sección de Acerca de Mi tenga texto blanco */
+#acerca-de-mi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes de texto */
+.text-container {
+    flex: 1;
+    padding: 20px;
+    color: white; /* Establece el color blanco para el texto en esta sección */
+    text-align: left;
+}
+
+.text-container h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.text-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Asegurando que la sección de contacto esté centrada */
+#contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-box {
+    background-color: #27005D;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white; /* Asegura que el texto dentro del cuadro de contacto sea blanco */
+}
+
+.contact-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-box input, .contact-box textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.contact-box button {
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white; /* Asegura que el texto del botón también sea blanco */
+}
+
+.contact-box button:hover {
+    background-color: #0056b3;
+}
+/* Estilo para el contenedor de redes sociales */
+#redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #9400FF;
+}
+
+/* Contenedor de las imágenes de redes sociales */
+.social-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estilo para las imágenes cuadradas de redes sociales */
+.social-item img {
+    width: 80px;  /* Tamaño fijo para las imágenes */
+    height: 80px;
+    border-radius: 10px;  /* Bordes redondeados */
+    object-fit: cover;  /* Asegura que la imagen se recorte adecuadamente */
+    transition: transform 0.3s ease;  /* Animación de zoom */
+}
+
+/* Efecto de zoom al pasar el mouse por encima */
+.social-item img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para la galería */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.gallery a {
+    width: 30%; /* Ajusta el tamaño de las imágenes */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery a:hover img {
+    transform: scale(1.05); /* Agranda la imagen al pasar el cursor */
+}
